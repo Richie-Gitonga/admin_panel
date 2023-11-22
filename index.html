@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Admin Panel Design</title>
+	</head>
+	<body>
+		<div class="container">
+			<aside class="navigation--container">
+				<div class="toggle">
+					<div class="logo">
+						<img src="images/logo.png" alt="" />
+						<h2>Richie Gitonga</h2>
+					</div>
+					<div class="close" id="close-btn">
+						<span class="material-icons-outlined"> close </span>
+					</div>
+				</div>
+				<div class="sidebar">
+					<a href="#">
+						<span class="material-icons-outlined"> space_dashboard </span>
+						<h3>Dashboard</h3>
+					</a>
+					<a href="#">
+						<span class="material-icons-outlined"> person_outline </span>
+						<h3>Users</h3>
+					</a>
+					<a href="#" class="active">
+						<span class="material-icons-outlined"> history </span>
+						<h3>History</h3>
+					</a>
+					<a href="#">
+						<span class="material-icons-outlined"> assessment </span>
+						<h3>Analytics</h3>
+					</a>
+					<a href="#">
+						<span class="material-icons-outlined"> point_of_sale </span>
+						<h3>Sales List</h3>
+					</a>
+					<a href="#">
+						<span class="material-icons-outlined"> report</span>
+						<h3>Report</h3>
+					</a>
+					<a href="#">
+						<span class="material-icons-outlined"> settings </span>
+						<h3>Settings</h3>
+					</a>
+					<a href="#">
+						<span class="material-icons-outlined"> login </span>
+						<h3>New Login</h3>
+					</a>
+					<a href="#">
+						<span class="material-icons-outlined"> logout </span>
+						<h3>Logout</h3>
+					</a>
+				</div>
+			</aside>
+			<main>
+				<h1>Analytics</h1>
+				<div class="analyse">
+					<div class="sales">
+						<div class="status">
+							<div class="info">
+								<h3>Total Sales</h3>
+								<h1>ksh 65,024</h1>
+							</div>
+							<div class="progress">
+								<svg>
+									<circle cx="38" cy="38" r="36"></circle>
+								</svg>
+								<div class="percentage">
+									<p>+81%</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="visits">
+						<div class="status">
+							<div class="info">
+								<h3>Site visits</h3>
+								<h1>25, 361</h1>
+							</div>
+							<div class="progress">
+								<svg>
+									<circle cx="38" cy="38" r="36"></circle>
+								</svg>
+								<div class="percentage">
+									<p>-48%</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="searches">
+						<div class="status">
+							<div class="info">
+								<h3>Searches</h3>
+								<h1>14, 147</h1>
+							</div>
+							<div class="progress">
+								<svg>
+									<circle cx="38" cy="38" r="36"></circle>
+								</svg>
+								<div class="percentage">
+									<p>+21%</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="new-users">
+					<h1>New Users</h1>
+					<div class="user-list">
+						<div class="user">
+							<img src="images/profile-1.jpg" />
+							<h2>Jack</h2>
+							<p>52min ago</p>
+						</div>
+						<div class="user">
+							<img src="images/profile-2.jpg" />
+							<h2>Judith</h2>
+							<p>5min ago</p>
+						</div>
+						<div class="user">
+							<img src="images/profile-3.jpg" />
+							<h2>Nekesa</h2>
+							<p>5h 26min ago</p>
+						</div>
+						<div class="user">
+							<img src="images/plus.png" />
+							<h2>More</h2>
+							<p>New User</p>
+						</div>
+					</div>
+				</div>
+				<div class="recent-orders">
+					<h1>Recent Orders</h1>
+					<table>
+						<thead>
+							<tr>
+								<th>Order Name</th>
+								<th>Order Number</th>
+								<th>Payment</th>
+								<th>Status</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+					<a href="#">Show All</a>
+				</div>
+			</main>
+			<div class="right-section">
+				<div class="nav">
+					<button id="menu-btn">
+						<span class="material-icons-outlined"> menu </span>
+					</button>
+					<div class="dark-mode">
+						<span class="material-icons-outlined"> dark_mode </span>
+						<span class="material-icons-outlined active"> light_mode </span>
+					</div>
+					<div class="profile">
+						<div class="info">
+							<p>Hey, <b>Reza</b></p>
+							<small class="text-muted">Admin</small>
+						</div>
+						<div class="profile-photo">
+							<img src="images/profile-4.jpg" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="orders.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>
